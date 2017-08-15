@@ -1,0 +1,32 @@
+{
+  "name": "Madden-Fantasy-Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run create -- --watch",
+    "create": "wt create index --bundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "body-parser": "^1.17.2",
+    "eslint-plugin-import": "^2.7.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.6",
+    "morgan": "^1.8.2",
+    "webtask-tools": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.2.0"
+  }
+}
