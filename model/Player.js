@@ -126,5 +126,6 @@ const playerSchema = new Schema({
   development: String,
 });
 
+
 // Export Mongoose model
 export default mongoose.model('player', playerSchema, 'players');

@@ -1,11 +1,15 @@
 import { Router } from 'express';
-import index from './controllers/players';
+import index, { getNames, getPlayer } from './controllers/players';
 
-// Initialize the router
 const router = Router();
 
-// Handle /movies.json route with index action from movies controller
+router.route('/players/:playerId')
+  .get(getPlayer);
+
 router.route('/players')
   .get(index);
+
+router.route('/getnames')
+  .get(getNames);
 
 export default router;

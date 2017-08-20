@@ -8,4 +8,16 @@ const index = (req, res) => {
   ));
 };
 
+export const getNames = (req, res) => {
+  Player.find({}, 'fullName firstName lastName portraitId', (err, playerNames) => (
+    res.json(playerNames)
+  ));
+};
+
+export const getPlayer = (req, res) => {
+  Player.findById(req.params.playerId, (err, player) => {
+    res.json(player);
+  });
+};
+
 export default index;
