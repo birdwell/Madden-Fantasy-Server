@@ -16,6 +16,10 @@ const index = (req, res) => {
       .exec((err, players) => {
         res.json(players);
       });
+  } else {
+    Player.find({}, null, { sort: { adp: 1 } }, (err, players) => (
+      res.json(players);
+    ));
   }
 };
 

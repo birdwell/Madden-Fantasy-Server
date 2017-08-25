@@ -8,7 +8,7 @@ router.route('/players/:playerId')
 
 router.route('/players')
   .get(index);
-
+  
 router.route('/adp/:playerId')
   .post(updateAdp);
 
