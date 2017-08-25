@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import index, { getNames, getPlayer } from './controllers/players';
+import index, { updateAdp, getPlayer } from './controllers/players';
 
 const router = Router();
 
@@ -9,5 +9,7 @@ router.route('/players/:playerId')
 router.route('/players')
   .get(index);
 
+router.route('/adp/:playerId')
+  .post(updateAdp);
 
 export default router;

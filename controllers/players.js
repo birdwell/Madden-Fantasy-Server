@@ -25,4 +25,15 @@ export const getPlayer = (req, res) => {
   });
 };
 
+export const updateAdp = (req, res) => {
+  const { adp, drafts, round } = req.body;
+  Player.findById(req.params.playerId, (err, player) => {
+    player.drafts = drafts;
+    player.adp = adp;
+    player.round = round;
+    player.save();
+    res.status(200);
+  });
+};
+
 export default index;
