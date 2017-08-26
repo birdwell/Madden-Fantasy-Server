@@ -124,8 +124,10 @@ const playerSchema = new Schema({
   fullName: String,
   experience: Number,
   development: String,
+  oldAdp: Number,
+  adp_diff: Number
 });
 
 
 // Export Mongoose model
-export default mongoose.model('player', playerSchema, 'players');
+export default mongoose.model('player', playerSchema, 'madden-18 ');
