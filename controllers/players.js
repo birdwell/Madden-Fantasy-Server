@@ -18,7 +18,7 @@ const index = (req, res) => {
       });
   } else {
     Player.find({}, null, { sort: { adp: 1 } }, (err, players) => (
-      res.json(players);
+      res.json(players)
     ));
   }
 };
