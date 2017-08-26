@@ -130,4 +130,4 @@ const playerSchema = new Schema({
 
 
 // Export Mongoose model
-export default mongoose.model('player', playerSchema, 'madden-18 ');
+export default mongoose.model('player', playerSchema, 'players');
